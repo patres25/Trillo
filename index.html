@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>trillo &mdash; Celý booking v 1</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="trillo logo" class="logo">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Hledat hotely">           
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>                       
+                        </svg>
+                    </button>
+                    <div class="search__clue">
+                        <ul class="search__clue-list">
+                            <li class="search__clue-item">
+                                Hotel Haná 
+                            </li>
+                            <li class="search__clue-item">
+                                Hotel Kavalír
+                            </li>
+                            <li class="search__clue-item">
+                                Old Prague hotel
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </form>
+
+
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                            <div class="user-nav__messages">
+                                <span>Zprávy</span>
+                                <ul class="user-nav__messages-list">
+                                    <li class="user-nav__messages-item"><a href="#" class="user-nav__messages-link">Eva Nová: Ahoj píšu ti ohledně...</a></li>
+                                    <li class="user-nav__messages-item">
+                                    <a href="#" class="user-nav__messages-link">Oto Figer: Vyzkoušel tu aplika...</a></li>
+                                    <li class="user-nav__messages-item"><a href="#" class="user-nav__messages-link">Trillo: Vítejte nový uživatel...</a></li>
+                                </ul>
+
+                            </div>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="Foto uživatele" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Patres</span>
+                        <div class="user-nav__user-menu">
+                            <ul class="user-nav__user-list">
+                                <li class="user-nav__user-item"><a href="#" class="user-nav__user-link">Účet</a></li>
+                                <li class="user-nav__user-item"><a href="#" class="user-nav__user-link">Nastavení</a></li>
+                                <li class="user-nav__user-item"><a href="#" class="user-nav__user-link">Odhlásit se</a></li>    
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+
+
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Hotel</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                <span>Let</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                </svg>
+                                <span>Autopůjčovna</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                </svg>
+                                <span>Výlety</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="legal">
+                        &copy; Vyrobeno Patrikem Holubářem na základě kurzu od Jonase Schmedtmannam.
+                    </div>
+                </nav>
+
+
+                <main class="hotel-view">
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/hotel-1.jpg" alt="Foto hotelu 1" class="gallery__photo">
+                            <figcaption class="gallery__caption">Hotel Haná</figcaption>
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/hotel-2.jpg" alt="Foto hotelu 2" class="gallery__photo">
+                            <figcaption class="gallery__caption">Hotel Kavalír</figcaption>
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/hotel-3.jpg" alt="Foto hotelu 3" class="gallery__photo">
+                            <figcaption class="gallery__caption">Old Prague hotel</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Hotel Eldorado
+                        </h1>
+                        <div class="overview__stars">
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+
+                        <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="btn-inline">Paradise,Heaven</button>
+                        </div>
+
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">8.7</div>
+                            <div class="overview__rating-count">429 hlasů</div>
+                        </div>
+
+                    </div>
+
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                            </p>
+                            <p class="paragraph">
+                                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                            </p>
+                            <ul class="list">
+                                <svg class="list__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <li class="list__item">Blízko pláže</li>
+                                <svg class="list__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <li class="list__item">Včetně snídaně</li>
+                                <svg class="list__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <li class="list__item">Zdarma z letiště</li>
+                                <svg class="list__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <li class="list__item">Wifi zdarma</li>
+                                <svg class="list__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <li class="list__item">Klimatizace a topení</li>
+                                <svg class="list__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <li class="list__item">Domácí mazlíčci vítání</li>
+                                <svg class="list__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <li class="list__item">CZ,DE,AJ,ES,FR</li>
+                                <svg class="list__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <li class="list__item">Ideální pro rodiny</li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Lucie a 3 další přátelé doporučují pobyt u nás.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="img/user-3.jpg" alt="Přítel 1" class="recommend__photo">
+                                    <img src="img/user-4.jpg" alt="Přítel 2" class="recommend__photo">
+                                    <img src="img/user-5.jpg" alt="Přítel 3" class="recommend__photo">
+                                    <img src="img/user-6.jpg" alt="Přítel 4" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-reviews">
+                            <figure class="review">
+                                <blockquote class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.</blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-1.jpg" alt="Host 1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Oto Novák</p>
+                                        <p class="review__user-date">23.února 2020</p>
+                                    </div>
+                                    <div class="review__rating">7.9</div>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="review">
+                                <blockquote class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.</blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-2.jpg" alt="Host 2" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Marie Fídlová</p>
+                                        <p class="review__user-date">20.listopadu 2019</p>
+                                    </div>
+                                    <div class="review__rating">9.4</div>
+                                </figcaption>
+                            </figure>
+
+                            <button class="btn-inline">Více dojmů <span>&rarr;</span></button>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="cta">
+                        <h2 class="cta__book-now">
+                            Dobré zprávy! Máme 4 volné pokoje ve Vámi zvoleném termínu!
+                        </h2>
+                        <button class="btn">
+                            <span class="btn__visible">Rezervovat</span>
+                            <span class="btn__invisible">Zbývají pouze 4 pokoje</span>                            
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
